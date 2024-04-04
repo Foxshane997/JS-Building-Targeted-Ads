@@ -1,5 +1,4 @@
 // get user's data
-
 // helper functions
 // Get the user's time:
 function userTime(){
@@ -18,11 +17,8 @@ function getMealTime(){
     // Another way to write the above lines would to refactor it as:
     // return tod > 20 ? 'late-night snack' : tod > 16 ? 'dinner' : tod > 11 ? 'lunch' : 'breakfast' // <--- this is an example of a ternary
 }
-    
   console.log(getMealTime())                   
-
-
-  // Get the user's coordinates:                                                              
+                                                              
 // Get the user's coordinates:                                                              
 async function getCoords(){
     pos = await new Promise((resolve, reject) => {
@@ -30,8 +26,6 @@ async function getCoords(){
     })
     return [pos.coords.latitude, pos.coords.longitude]
 }
-
-
 
 // Build Ad 1:                                                           
 function buildAd1(){
@@ -41,7 +35,6 @@ function buildAd1(){
     inner.innerHTML = `We've got the best <span>${mealTime}</span> in town`
     content.append(inner)
 }
-
 
 // Build Ad 2                                                             
 function buildAd2(coordinates){
